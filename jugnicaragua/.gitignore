@@ -1,0 +1,27 @@
+### Eclipse ###
+.classpath
+.project
+.settings
+
+### IntelliJ IDEA ###
+*.iml
+*.ipr
+*.iws
+.idea
+out
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Vim
+tags
+.*.swp
+.*.swo
+
+# macOS
+.DS_Store

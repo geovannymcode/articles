@@ -1,0 +1,6 @@
+com/example/jugnicaragua/jugnicaragua/service/ICRUD.class
+com/example/jugnicaragua/jugnicaragua/exception/ModelNotFoundException.class
+com/example/jugnicaragua/jugnicaragua/controller/PersonController.class
+com/example/jugnicaragua/jugnicaragua/JugnicaraguaApplication.class
+com/example/jugnicaragua/jugnicaragua/model/Person.class
+com/example/jugnicaragua/jugnicaragua/dao/IPersonDAO.class
