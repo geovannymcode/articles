@@ -5,7 +5,6 @@ import com.example.jugnicaragua.jugnicaragua.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -30,9 +29,9 @@ public class PersonService {
 
     }
 
-    public List<Person> list() {
+    public Iterable<Person> list() {
 
-        return (List<Person>) dao.findAll();
+        return dao.findAll();
     }
 
     public Optional<Person> listId(int id) {
