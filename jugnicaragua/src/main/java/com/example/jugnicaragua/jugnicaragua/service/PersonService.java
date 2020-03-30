@@ -13,28 +13,15 @@ public class PersonService {
     @Autowired
     private IPersonDAO dao;
 
+    public Person save(Person t) { return dao.save(t); }
 
-    public Person save(Person t) {
+    public Person update(Person t) { return dao.save(t); }
 
-        return dao.save(t);
-    }
+    public void delete(Person t) { dao.delete(t); }
 
-    public Person update(Person t) {
+    public Iterable<Person> list() { return dao.findAll(); }
 
-        return dao.save(t);
-    }
-
-    public void delete(Person t) {
-       dao.delete(t);
-
-    }
-
-    public Iterable<Person> list() {
-
-        return dao.findAll();
-    }
-
-    public Optional<Person> listId(int id) {
+    public Optional<Person> listId(long id) {
         return dao.findById(id);
     }
 

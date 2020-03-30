@@ -4,12 +4,12 @@ package com.example.jugnicaragua.jugnicaragua.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name="person")
 public class Person {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idPerson;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="idperson")
+    private Long idPerson;
 
     @Column(name="firstname", nullable = false, length=70)
     private String firstName;
@@ -17,11 +17,11 @@ public class Person {
     @Column(name="lastname", nullable = false, length=70)
     private String lastName;
 
-    public Integer getIdPerson() {
+    public Long getIdPerson() {
         return idPerson;
     }
 
-    public void setIdPerson(Integer idPerson) {
+    public void setIdPerson(Long idPerson) {
         this.idPerson = idPerson;
     }
 
